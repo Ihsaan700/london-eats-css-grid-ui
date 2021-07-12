@@ -36,6 +36,12 @@ body > header {
 }
 
 body > main {
+    display: grid;
+    grid: 
+    'store-search' max-content
+    'main-delivery' max-content
+    'store-list' 1fr;
+    row-gap: 24px;
     background: #FFFFEF;
 }
 
@@ -58,4 +64,16 @@ body > header > img {
 
 body > header > img {
     cursor: pointer;
+}
+
+#store-search-container {
+    grid-area: store-search;
+}
+
+#main-delivery-container {
+    grid-area: main-delivery;
+}
+
+#store-list-container {
+    grid-area: store-list;
 }
