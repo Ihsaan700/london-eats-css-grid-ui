@@ -45,6 +45,17 @@ body > footer {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content 1fr;
     grid-template-rows: 70px;
+    justify-items: end;
+    align-items: center;
+}
+
+
+body > header > img {
+    height: 30px;
+}
+
+body > header > img {
+    cursor: pointer;
 }
