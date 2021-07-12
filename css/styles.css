@@ -16,7 +16,35 @@ html {
 }
 
 body {
+    display: grid;
+    grid-template-rows: 74px 1fr;
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #262;
+}
+
+body > header,
+body > main,
+body > footer {
+    padding: 0 16px;
+}
+
+body > header {
+    background: #007340;
+    box-shadow: 0 20px 50px -20px #007340;
+    z-index: 1;
+}
+
+body > main {
+    background: #FFFFEF;
+}
+
+body > footer {
+    background: #FD0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px;
 }
