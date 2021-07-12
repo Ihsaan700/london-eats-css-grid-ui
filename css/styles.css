@@ -101,6 +101,20 @@ body > header > img {
 
 #main-delivery-container {
     grid-area: main-delivery;
+    display: grid;
+    grid: min-content min-content / auto-flow minmax(max-content, 1fr) minmax(max-content, 5fr);
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.main-delivery-label {
+    color: #535331;
+    font-weight: 400;
+}
+
+.main-delivery-choice {
+    border: 1px solid #262;
+    padding: 8px;
 }
 
 #store-list-container {
