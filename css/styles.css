@@ -43,6 +43,7 @@ body > main {
     'store-list' 1fr;
     row-gap: 24px;
     background: #FFFFEF;
+    padding-top: 24px;
 }
 
 body > footer {
@@ -68,6 +69,34 @@ body > header > img {
 
 #store-search-container {
     grid-area: store-search;
+}
+
+#store-search-container > form {
+    display: grid;
+    grid: max-content / 30px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #8A8;
+}
+
+#store-search-container > form > img {
+    width: 30px;
+    height: 30px;
+}
+
+#store-search-container input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    background: transparent;
+    color: #262;
+}
+
+#store-search-container input::placeholder {
+    color: #ACA;
+    font-weight: normal;
 }
 
 #main-delivery-container {
