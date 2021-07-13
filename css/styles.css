@@ -50,7 +50,7 @@ body > footer {
     background: #FD0;
 }
 
-header {
+body > header {
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-template-rows: 70px;
@@ -119,4 +119,115 @@ body > header > img {
 
 #store-list-container {
     grid-area: store-list;
+}
+
+#store-list-container > ul {
+    display: grid;
+    grid: auto-flow 310px / 1fr;
+    row-gap: 64px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+#store-list-container > h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#store-list-container > ul {
+    list-style: none;
+}
+
+#store-list-container > ul a {
+    text-decoration: none;
+    color: #262626;
+}
+
+#store-list-container li article {
+    background: #fd6;
+    padding-bottom: 20px;
+}
+
+#store-list-container li article .thumbnail-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+
+#store-list-container li article h3 {
+    color: #007340;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#store-list-container li article p {
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+
+#store-list-container li article p:first-of-type {
+    color: #252;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#store-list-container li article p:last-of-type {
+    margin-top: 8px;
+}
+
+#store-list-container li article p:last-of-type > span {
+    padding: 4px 8px;
+    background: #007340;
+    color: #fff;
+}
+
+#store-list-container li article p:last-of-type img {
+    width: 14px;
+    height: 14px;
+}
+
+#burgaz .thumbnail-image {
+    background-image: url(../images/stores/burgaz.png);
+}
+
+#super-sanga .thumbnail-image {
+    background-image: url(../images/stores/super-sanga.png);
+}
+
+#mctuckey .thumbnail-image {
+    background-image: url(../images/stores/mctuckey.png);
+}
+
+#straya .thumbnail-image {
+    background-image: url(../images/stores/straya.png);
+}
+
+#snags .thumbnail-image {
+    background-image: url(../images/stores/snags.png);
+}
+
+#oi .thumbnail-image {
+    background-image: url(../images/stores/oi.png);
+}
+
+#chips-mate .thumbnail-image {
+    background-image: url(../images/stores/chips-mate.png);
+}
+
+#fridee-nights .thumbnail-image {
+    background-image: url(../images/stores/fridee-nights.png);
+}
+
+#maccas .thumbnail-image {
+    background-image: url(../images/stores/maccas.png);
 }
