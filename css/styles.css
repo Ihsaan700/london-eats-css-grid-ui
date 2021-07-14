@@ -59,7 +59,9 @@ body > header {
 }
 
 
-body > header > img {
+body > header > img,
+body > footer > img,
+li > a > img {
     height: 30px;
 }
 
@@ -119,6 +121,7 @@ body > header > img {
 
 #store-list-container {
     grid-area: store-list;
+    margin-bottom: 64px;
 }
 
 #store-list-container > ul {
@@ -230,4 +233,48 @@ h2 {
 
 #maccas .thumbnail-image {
     background-image: url(../images/stores/maccas.png);
+}
+
+body > footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+hr {
+    margin: 24px 0;
+    border-bottom: 1px solid #262;
+}
+
+body > footer li {
+    list-style: none;
+}
+
+body > footer a {
+    display: block;
+    color: #007340;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+body > footer a:hover {
+    color: #638a78;
+}
+
+#social-media-links {
+    display: flex;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+#social-media-links img {
+    width: 32px;
+}
+
+#security-section {
+    font-size: 1.2rem;
+}
+
+#security-section > small {
+    display: block;
+    margin-bottom: 12px;
 }
